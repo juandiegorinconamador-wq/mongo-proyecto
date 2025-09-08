@@ -1,0 +1,101 @@
+{
+  "users": {
+    "examples": [
+      {
+        "name": "Carlos Pérez",
+        "email": "carlos.perez@example.com",
+        "username": "carlosp",
+        "passwordHash": "$2b$10$examplehash1",
+        "role": "student",
+        "createdAt": "2025-09-01T10:00:00Z",
+        "profile": { "bio": "Desarrollador web", "location": "Bogotá, Colombia" }
+      },
+      {
+        "name": "María López",
+        "email": "maria.lopez@example.com",
+        "username": "marial",
+        "passwordHash": "$2b$10$examplehash2",
+        "role": "instructor",
+        "createdAt": "2025-08-15T09:30:00Z",
+        "profile": { "bio": "Profesora de backend", "location": "Medellín, Colombia" }
+      }
+    ],
+    "indexes": [
+      { "email": 1, "options": { "unique": true } },
+      { "username": 1, "options": { "unique": true } }
+    ]
+  },
+
+  "courses": {
+    "examples": [
+      {
+        "title": "Introducción a MongoDB",
+        "description": "Curso básico sobre bases de datos NoSQL",
+        "instructorId": "ObjectId(users[1])",
+        "category": "Bases de datos",
+        "createdAt": "2025-07-10T12:00:00Z",
+        "tags": ["mongodb", "nosql", "database"]
+      },
+      {
+        "title": "JavaScript Avanzado",
+        "description": "Curso para mejorar tus habilidades en JS",
+        "instructorId": "ObjectId(users[1])",
+        "category": "Programación",
+        "createdAt": "2025-07-20T15:30:00Z",
+        "tags": ["javascript", "frontend", "programming"]
+      }
+    ],
+    "indexes": [
+      { "instructorId": 1 },
+      { "title": "text" }
+    ]
+  },
+
+  "enrollments": {
+    "examples": [
+      {
+        "userId": "ObjectId(users[0])",
+        "courseId": "ObjectId(courses[0])",
+        "enrolledAt": "2025-08-01T09:00:00Z",
+        "status": "active"
+      },
+      {
+        "userId": "ObjectId(users[0])",
+        "courseId": "ObjectId(courses[1])",
+        "enrolledAt": "2025-08-05T14:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "indexes": [
+      { "userId": 1 },
+      { "courseId": 1 },
+      { "userId": 1, "courseId": 1, "options": { "unique": true } }
+    ]
+  },
+
+  "progresos": {
+    "examples": [
+      {
+        "userId": "ObjectId(users[0])",
+        "courseId": "ObjectId(courses[0])",
+        "completedLessons": 5,
+        "totalLessons": 10,
+        "progress": 50,
+        "lastAccess": "2025-09-05T18:30:00Z"
+      },
+      {
+        "userId": "ObjectId(users[0])",
+        "courseId": "ObjectId(courses[1])",
+        "completedLessons": 10,
+        "totalLessons": 10,
+        "progress": 100,
+        "lastAccess": "2025-09-07T11:00:00Z"
+      }
+    ],
+    "indexes": [
+      { "userId": 1 },
+      { "courseId": 1 },
+      { "userId": 1, "courseId": 1, "options": { "unique": true } }
+    ]
+  }
+}
