@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "68bf4eca17347d8a3ff92a29"
+  },
+  "title": "Introducción a MongoDB",
+  "description": "Curso básico sobre bases de datos NoSQL",
+  "instructorId": {
+    "$oid": "68bf4eca17347d8a3ff92a27"
+  },
+  "category": "Bases de datos",
+  "createdAt": {
+    "$date": "2025-07-10T12:00:00.000Z"
+  },
+  "tags": [
+    "mongodb",
+    "nosql",
+    "database"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68bf4eca17347d8a3ff92a2a"
+  },
+  "title": "JavaScript Avanzado",
+  "description": "Curso para mejorar tus habilidades en JS",
+  "instructorId": {
+    "$oid": "68bf4eca17347d8a3ff92a28"
+  },
+  "category": "Programación",
+  "createdAt": {
+    "$date": "2025-07-20T15:30:00.000Z"
+  },
+  "tags": [
+    "javascript",
+    "frontend",
+    "programming"
+  ]
+}]

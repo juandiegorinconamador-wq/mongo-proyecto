@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "68bf4d98a321c29103321e03"
+  },
+  "name": "Carlos Pérez",
+  "email": "carlos.perez@example.com",
+  "username": "carlosp",
+  "passwordHash": "$2b$10$examplehash1",
+  "role": "student",
+  "createdAt": {
+    "$date": "2025-09-01T10:00:00.000Z"
+  },
+  "profile": {
+    "bio": "Desarrollador web",
+    "location": "Bogotá, Colombia"
+  }
+},
+{
+  "_id": {
+    "$oid": "68bf4d98a321c29103321e04"
+  },
+  "name": "María López",
+  "email": "maria.lopez@example.com",
+  "username": "marial",
+  "passwordHash": "$2b$10$examplehash2",
+  "role": "instructor",
+  "createdAt": {
+    "$date": "2025-08-15T09:30:00.000Z"
+  },
+  "profile": {
+    "bio": "Profesora de backend",
+    "location": "Medellín, Colombia"
+  }
+}]

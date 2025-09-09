@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "68bf4f725d06e09e818d3908"
+  },
+  "userId": {
+    "$oid": "68bf4f725d06e09e818d3904"
+  },
+  "courseId": {
+    "$oid": "68bf4f725d06e09e818d3905"
+  },
+  "enrolledAt": {
+    "$date": "2025-08-01T09:00:00.000Z"
+  },
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "68bf4f725d06e09e818d3909"
+  },
+  "userId": {
+    "$oid": "68bf4f725d06e09e818d3906"
+  },
+  "courseId": {
+    "$oid": "68bf4f725d06e09e818d3907"
+  },
+  "enrolledAt": {
+    "$date": "2025-08-05T14:00:00.000Z"
+  },
+  "status": "completed"
+}]
